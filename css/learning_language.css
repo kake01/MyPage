@@ -1,0 +1,167 @@
+body {
+  margin: unset;
+  padding: unset;
+  background: black;
+}
+nav {background: darkgrey;}
+nav ul {
+  overflow: hidden;
+  padding: 0 5%;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  width: 33%;
+}
+nav ul li a {
+  display: block;
+  padding: 17px 5%;
+  width: 90%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li :hover {
+  background:  white;
+  color: black
+}
+p {text-align: center;}
+/*------------
+footer関係
+------------*/
+footer {
+  height: 75px;
+  position: relative;
+}
+footer a {padding-right: 10px;}
+.creator_contact {display: flex;}
+.copyright {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.copyright p {color: white;}
+.aboout {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+/* ---------------
+fontawesome関係
+------------------ */
+.fa-google-plus-g {color: #ed1849;}
+.fa-twitter {color: #1da1f2;}
+.fa-discord {
+  color: white;
+  background: #7389dc;
+}
+/* ----------------
+unity関係
+------------------*/
+.unity {background: silver;}
+.unity img {
+  width: 100%;
+  height: 250px;
+}
+.unity video {
+  width: 100%;
+  height: 250px;
+}
+.unity h1 {
+  text-align: center;
+  color: #050608;
+}
+.unity h2, .unity h3 {
+  text-align: center;
+  color: white;
+}
+.unity .work {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+/*----------------
+unity work内の要素
+----------------- */
+.chess {
+  width: 33%;
+  order: 1;
+}
+.rpg {
+  width: 33%;
+  order: 2;
+}
+.shougi {
+  width: 33%;
+  order: 3;
+}
+/*-------------
+サイト関係
+--------------*/
+.site {
+  background: silver;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.site .work {display: flex;}
+.site .img {width: 50%;}
+.site img {width: 100%;}
+.site h1 {
+  text-align: center;
+  color: #050608;
+}
+.site h2  {
+  text-align: center;
+  color: #050608;
+}
+/*-----------------------
+site work h1のカラー
+---------------------- */
+.site h1 {color: white;}
+.html {color: #ff7930;}
+.css {color: #086db0;}
+.js {color: #fdd83c;}
+.site .description {
+  width: 45%;
+  padding: 40px;
+  margin: 0 auto;
+}
+/*--------------------
+サイトの注意書き関係
+--------------------*/
+.frame_red {border-color: #ff4500;}
+.frame {
+  width: 80%;
+  margin: 30px auto 20px;
+  padding: 30px 20px 0;
+  border: 3px solid red;
+  position: relative;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.frame_title {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.frame_title .fa {margin-right: 5px;}
+.caution {
+  background-color: #ff4500;
+  border: 2px solid #ff4500;
+  color: #fff;
+  border-radius: 3px;
+}
+/* ------------------
+スマホ(横向きも含む)のレスポンシブ関係
+--------------------- */
+@media screen and (max-width:1000px) {
+  .unity .work, .site .work {display: unset;}
+  .chess, .rpg, .shougi {width: 100%;}
+  .site .img {width: 100%;}
+  .site .description {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }

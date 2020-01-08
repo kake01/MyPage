@@ -1,0 +1,120 @@
+body {
+  margin: unset;
+  padding: unset;
+  /* background: black; */
+}
+/*----------------
+メニュー関係
+------------------*/
+nav {background: darkgrey;}
+nav ul {
+  overflow: hidden;
+  padding: 0 5%;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  width: 33%;
+}
+nav ul li a {
+  display: block;
+  padding: 17px 5%;
+  width: 90%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li :hover {
+  background:  white;
+  color: black
+}
+/*------------
+footer関係
+------------*/
+footer {
+  height: 75px;
+  position: relative;
+}
+footer a {padding-right: 10px;}
+.creator_contact {display: flex;}
+.copyright {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.copyright p {color: white;}
+.aboout {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+/* ---------------
+fontawesome関係
+------------------ */
+.fa-google-plus-g {color: #ed1849;}
+.fa-twitter {color: #1da1f2;}
+.fa-discord {
+  color: white;
+  background: #7389dc;
+}
+/* ---------------------
+目標関係
+----------------------- */
+.objective {
+
+}
+
+
+
+
+
+
+
+
+
+/* ---------------
+グラフ関係
+------------------ */
+.health_log {display: flex;}
+.graph {
+  width: 50%;
+  height: 400px;
+  /* margin: auto; */
+}
+.graph h1 {
+  text-align: center;
+  font-family: serif;
+}
+.ct-perfect-fourth {
+  display: block;
+  height: 200px;
+  padding-bottom: unset;
+}
+/*--------------------
+サイトの注意書き関係
+--------------------*/
+.warning {width: 50%;}
+.frame_red {border-color: #ff4500;}
+.frame {
+  width: 80%;
+  margin: 30px auto 20px;
+  padding: 30px 20px 0;
+  border: 3px solid red;
+  position: relative;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.frame_title {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.frame_title .fa {margin-right: 5px;}
+.caution {
+  background-color: #ff4500;
+  border: 2px solid #ff4500;
+  color: #fff;
+  border-radius: 3px;
+}

@@ -61,7 +61,58 @@ fontawesome関係
 目標関係
 ----------------------- */
 .objective {
+  text-align: center;
+  border-style: dashed;
+  margin: 10px;
+}
+.logical_expansion {display: flex;}
+.last_year, .this_year{
+  width: 35%;
+  padding: 25px;
+}
+.arrow {width: 30%;}
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+/* --------------
+具体的な手段関係
+----------------- */
+.Concrete {
+  text-align: center;
+  border-style: dashed;
+  border-color: red;
+  margin: 10px;
+}
+/*　-----------------------
+具体的なグラフに関して
+-------------------------- */
+.objective_visualization .description {display: flex;}
+.objective_visualization  .description_text {
+  width: 50%;
+  order: 1;
+}
+.objective_visualization  .description_img {
+  width: 50%;
+  order: 2;
+}
 
+
+
+/*　-----------------------
+具体的なチャットボットに関して
+-------------------------- */
+.objective_chatbot .description {display: flex;}
+.objective_chatbot .description_text {
+  width: 50%;
+  /* order: 2; */
+}
+.objective_chatbot .description_img {
+  width: 50%;
+  /* order: 1; */
+}
+.objective_chatbot img {
+  height: 300px;
 }
 
 
@@ -79,7 +130,6 @@ fontawesome関係
 .graph {
   width: 50%;
   height: 400px;
-  /* margin: auto; */
 }
 .graph h1 {
   text-align: center;
@@ -117,4 +167,40 @@ fontawesome関係
   border: 2px solid #ff4500;
   color: #fff;
   border-radius: 3px;
+}
+/* ------------------
+スマホ(横向きも含む)のレスポンシブ関係
+--------------------- */
+@media screen and (max-width:1000px) {
+  .logical_expansion {display: unset;}
+  .last_year, .this_year{
+    width: 95%;
+    padding: unset;
+    margin: auto;
+  }
+  .arrow {
+    transform: rotate( 90deg );  /* 2D(平面)で回転 */
+    margin: auto;
+  }
+  /*　-----------------------
+  具体的なグラフに関して
+  -------------------------- */
+  .objective_visualization .description {display: unset;}
+  .objective_visualization .description_text,
+  .objective_visualization .description_img {
+    width: 90%;
+    margin: auto;
+  }
+  /*　-----------------------
+  具体的なチャットボットに関して
+  -------------------------- */
+  .objective_chatbot .description {display: unset;}
+  .objective_chatbot .description_text,
+  .objective_chatbot .description_img {
+    width: 90%;
+    margin: auto;
+  }
+  .health_log {
+    display: unset;
+  }
 }

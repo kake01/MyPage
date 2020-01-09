@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>MyPortfolio|TOP</title>
+  <title>MyPortfolio|自己PR</title>
   <link rel="stylesheet" href="../css/chartist.min.css">
   <link rel="stylesheet" href="../css/research.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -24,20 +24,85 @@
     <!-- 今年度の目標 -->
     <div class="objective">
       <h1>今年度の研究目標</h1>
-      <p>昨年度の研究結果から、</p>
+      <div class="logical_expansion">
+        <!-- 昨年度から見える事 -->
+        <section class="last_year">
+          <h2>昨年度からの予想</h2>
+          <p>昨年度の研究結果から改めて考える予定だが、今年度の研究目標は機械に褒められて人に与えられる影響である。</p>
+          <p>昨年度はSNSを用いて他者から[いいね]を貰いやる気を出すか,
+            ゲーミフィケーションを楽しみつつやる気が持続するかの研究を行った。
+          </p>
+          <p>実証実験を行っていないため現段階の予想であるが、SNSで[いいね]を貰っても嬉しくないと考える。</p>
+          <p>何故なら、フォロワーが少ない人は[いいね]を多く貰えず、
+            あまりツイートする必要がない。
+            そして、自分の努力をあまり知らない人に[いいね]を貰っても、貰った側は冷やかされる様に感じると考える。
+          </p>
+        </section>
+        <!-- 矢印関係 -->
+        <div class="arrow">
+          <img src="../raw/research/arrow_icon.png" alt="矢印画像">
+        </div>
+        <!-- 今年度に行いたい事 -->
+        <section class="this_year">
+          <h2>予想からの引継ぎ研究</h2>
+          <p>
+            昨年の現在での予想から今年度の目標は、
+            ユーザーを熟知したチャットボットの作成,チャットボットに褒めれてやる気を出すかの研究である。
+          </p>
+          <p>チャットボットを使う事でフォロワーが関係なくなり、
+            ユーザーを深く理解している事で冷やかされると感じる事もないと考える。
+          </p>
+          <p>今年度はこれらをテーマに研究を進めて行きたいと考えている。</p>
+        </section>
+      </div>
+    </div>
+    <!-- 具体的な手段 -->
+    <div class="Concrete">
+      <h1>具体的な内容</h1>
+      <!--グラフで可視化 -->
+      <section class="objective_visualization">
+        <h2>自分の頑張り状況の可視化</h2>
+        <div class="description">
+          <section class="description_img">
+            <img src="../raw/research/temp_raph.jpeg" alt="グラフの参考画像">
+          </section>
+          <section class="description_text">
+            <p>一週間の自分の努力をグラフで可視化する。</p>
+            <p>昨年度はゲーミフィケーション部分で行った。今年度もゲーミフィケーションで実現をしたいが、
+              見た目を追及したいためライブラリーを使ってリッチに表現したいと考えている。
+            </p>
+            <p>チャットボットがメインであり、開発期間や技術があればゲーミフィケーションに変更したいと考えている。</p>
+          </section>
+        </div>
+      </section>
+      <section class="objective_chatbot">
+        <h2>チャットボットにそれぞれ性格がある</h2>
+        <div class="description">
+          <section class="description_img">
+            <img src="../raw/research/chat_bot.png" alt="チャットボットの参考画像">
+          </section>
+          <section class="description_text">
+            <p>チャットボットには性格(ユーザーの事前アンケートにより最適な)がある。</p>
+            <p>アンケートからユーザーの性格を把握し、ユーザーがやる気を出すレベルのミッション提案,口調になる</p>
+            <p>また、チャットボットと会話をする事でよりユーザーに寄り添える様にする。</p>
+          </section>
+        </div>
+      </section>
     </div>
 
-    <!-- グラフ関係 -->
+
+
+
+
+    <!-- 実際に作ってみる1 グラフ関係 -->
     <div class="health_log">
       <div class="graph">
         <h1>一週間の成績</h1>
-        <!-- グラフ -->
+        <!-- グラフ関係 -->
         <div class="ct-chart ct-perfect-fourth"></div>
-
-        <!-- テストプレイボタン -->
+        <!-- テストプレイボタン関係 -->
         <div class="graph_test">
           <button type="button" name="button" onclick="Debug()">今日の記録を行う</button>
-          <!-- <input type="number" name="order" placeholder="数量は10個まで" -->
           <input id="test" type="number" name="order" placeholder="今日の値">
         </div>
       </div>
@@ -47,42 +112,41 @@
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>CAUTION
           </div>
           <p>JSが完成していないので、記入した後にタブの大きさを変更して下さい。</p>
+          <p>ここの部分だけレスポンシブが出来てません</p>
         </div>
       </div>
     </div>
 
 
 
-    <div class="">
-      <!--
-      今年のやりたいこと
-      グラフで可視化
-      チャットボットで会話
-      説明
-    -->
-  </div>
-  <div class="">
-    <!-- 実際に作ってみる -->
-  </div>
-</main>
+    <!-- 実際に作ってみる2 チャットボット関係 -->
+    <!-- <div class="chat_bot">
+      <p>ここにチャットボットを作る</p>
+    </div> -->
+  </main>
 
-<!-- <footer>
-<div class="creator_contact">
-<div class="aboout">
-<a href="https://twitter.com/chXK5odXHaQDdVz" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-<a href="https://discord.gg/bhTmYXu"><i class="fab fa-discord fa-2x"></i></a>
-<a href="#" class="gmail_click"><i class="fab fa-google-plus-g fa-2x"></i></a>
-</div>
-<section class="copyright">
-<p>&copy; 2020 井熊 翔</p>
-</section>
-</div>
-</footer> -->
+  <footer>
+    <div class="creator_contact">
+      <div class="aboout">
+        <a href="https://twitter.com/chXK5odXHaQDdVz" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://discord.gg/bhTmYXu" target="_blank"><i class="fab fa-discord fa-lg"></i>
+        </a>
+        <a href="#" class="gmail_click">
+          <i class="fab fa-google-plus-g fa-lg"></i>
+        </a>
+      </div>
+      <section class="copyright">
+        <p>&copy; 2020 井熊 翔</p>
+      </section>
+    </div>
+  </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/chartist.min.js"></script>
-<script src="../js/research.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/chartist.min.js"></script>
+  <script src="../js/research.js"></script>
 </body>
 </html>

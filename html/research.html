@@ -89,42 +89,38 @@
         </div>
       </section>
     </div>
-
-
-
-
-
-    <!-- 実際に作ってみる1 グラフ関係 -->
-    <div class="health_log">
-      <div class="graph">
-        <h1>一週間の成績</h1>
-        <!-- グラフ関係 -->
-        <div class="ct-chart ct-perfect-fourth"></div>
-        <!-- テストプレイボタン関係 -->
-        <div class="graph_test">
-          <button type="button" name="button" onclick="Debug()">今日の記録を行う</button>
-          <input id="test" type="number" name="order" placeholder="今日の値">
+    <!-- 実際に作ってみた関係 -->
+    <div class="Actual">
+      <h1>実際に作ってみた</h1>
+      <!-- 実際に作ってみる1 グラフ関係 -->
+      <div class="health_log">
+        <div class="graph">
+          <h2>一週間の成績</h2>
+          <!-- グラフ関係 -->
+          <div class="ct-chart ct-perfect-fourth"></div>
+          <!-- テストプレイボタン関係 -->
+          <div class="graph_test">
+            <button type="button" name="button" onclick="Debug()">今日の記録を行う</button>
+            <input id="test" type="number" name="order" placeholder="今日の値">
+          </div>
+        </div>
+        <div class="warning">
+          <div class="frame frame_red">
+            <div class="frame_title caution">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>CAUTION
+            </div>
+            <p>ここの部分だけレスポンシブが出来てません</p>
+            <p>ライブラリーを使用している為、完璧に理解できてません。</p>
+            <p class="caution_color">※自作に出来たら修正する予定</p>
+          </div>
         </div>
       </div>
-      <div class="warning">
-        <div class="frame frame_red">
-          <div class="frame_title caution">
-            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>CAUTION
-          </div>
-          <p>JSが完成していないので、記入した後にタブの大きさを変更して下さい。</p>
-          <p>ここの部分だけレスポンシブが出来てません</p>
-        </div>
+      <!-- 実際に作ってみる2 チャットボット関係 -->
+      <div class="chat_bot">
+        <h2>チャットボット制作は勉強段階の為お見せ出来ません。</h2>
       </div>
     </div>
-
-
-
-    <!-- 実際に作ってみる2 チャットボット関係 -->
-    <!-- <div class="chat_bot">
-      <p>ここにチャットボットを作る</p>
-    </div> -->
   </main>
-
   <footer>
     <div class="creator_contact">
       <div class="aboout">
@@ -133,7 +129,7 @@
         </a>
         <a href="https://discord.gg/bhTmYXu" target="_blank"><i class="fab fa-discord fa-lg"></i>
         </a>
-        <a href="#" class="gmail_click">
+        <a href="#" onclick="GmailClick()">
           <i class="fab fa-google-plus-g fa-lg"></i>
         </a>
       </div>
